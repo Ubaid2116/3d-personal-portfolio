@@ -7,7 +7,8 @@ const AboutDetails = () => {
       <div className="grid grid-cols-12 gap-4 xs:gap-6 md:gap-8 w-full">
         <ItemLayout className="col-span-full lg:col-span-8 row-span-2 flex-col items-start transition-transform transform hover:scale-105">
           <h2 className="text-xl md:text-2xl text-left w-full capitalize font-extrabold text-gray-100">
-            Crafting Digital Experiences with Precision & Passion
+            Crafting Digital Experiences with Precision &amp; Passion{" "}
+            {/* Escaped ampersand */}
           </h2>
           <p className="text-gray-100 text-1xl sm:text-sm md:text-base">
             As a dedicated web developer, I specialize in creating user-centric
@@ -16,9 +17,10 @@ const AboutDetails = () => {
             and React.js, enabling me to build scalable and efficient solutions
             for businesses. With a strong focus on UI/UX, I ensure that every
             project not only performs flawlessly but also offers a visually
-            captivating experience. Whether it's building dynamic interfaces or
-            leveraging the power of cloud computing, I thrive on pushing the
-            boundaries of what's possible in web development.
+            captivating experience. Whether it&apos;s building dynamic
+            interfaces or leveraging the power of cloud computing, I thrive on
+            pushing the boundaries of what&apos;s possible in web development.{" "}
+            {/* Escaped apostrophe */}
           </p>
         </ItemLayout>
 
@@ -35,18 +37,19 @@ const AboutDetails = () => {
           </p>
         </ItemLayout>
 
+        {/* Use the Next.js Image component */}
         <ItemLayout className="col-span-full">
           <img
-            className="w-full h-auto"
             src={`https://skillicons.dev/icons?i=html,css,js,ts,tailwind,react,nextjs,figma,git,github,netlify,nodejs,npm,postgres,supabase,vercel,vscode,`}
-            loading="lazy"
             alt="Skills Icons"
+            loading="lazy"
           />
         </ItemLayout>
 
         <ItemLayout className="col-span-full text-center mt-10">
           <blockquote className="italic text-gray-100">
-            "Coding is not just about solving problems; it's about crafting solutions that empower users."
+            &quot;Coding is not just about solving problems; it&apos;s about
+            crafting solutions that empower users.&quot; {/* Escaped quotes */}
           </blockquote>
         </ItemLayout>
       </div>
